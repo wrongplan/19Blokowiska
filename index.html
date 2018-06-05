@@ -26,10 +26,12 @@
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
     <title>Blokowiska Wrocławskie</title>
 </head>
 <body>
-
     <header class="container-fluid header-bg">
 
       <div class="row">
@@ -74,8 +76,23 @@
         <p class="home-paragraph">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </p>
         <p class="home-paragraph-learnMore">Read more</p>
+        <p class="home-paragraph-learnMore--toggle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
       </div>
   </section>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".home-paragraph-learnMore").click(function(){
+        $(".home-paragraph-learnMore--toggle").slideToggle("slow");
+        $('html, body').animate({
+        scrollTop: $(".home-paragraph-learnMore--toggle").offset().top
+      }, 1000)
+    });
+});
+</script>
 
 </body>
 </html>

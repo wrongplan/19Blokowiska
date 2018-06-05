@@ -86,9 +86,19 @@ body{
 //section with icon and article
 .home-icon-container{
 	text-align: center;
+	width: 100%;
 }
 .home-icon{
-	width: 80%;
+	width: 100%;
+
+	transition: 1s;
+	display: block;
+	margin-top: 50px;
+	transition: 1s ease;
+}
+.home-icon:hover{
+	transform: rotate(40deg) scale(0.9);
+	// width:  100%;
 }
 .home-title{
 	 color: #6bc498;
@@ -98,8 +108,25 @@ body{
 .home-paragraph{
 	font-size: 13px;
   font-weight: 300;
-  font-style: normal;
   line-height: 1.31;
   text-align: justify;
   color: #010101;
+  margin: 0;
+}
+.home-paragraph-learnMore{
+	color: #6bc498;
+	font-size: 13px;
+	font-weight: 600;
+	cursor: pointer;
+	text-align: right;
+	margin-top: 13px;
+
+}
+.home-paragraph-learnMore--toggle{
+	display: none;
+	font-size: 13px;
+  font-weight: 300;
+  line-height: 1.31;
+  text-align: justify;
+  color: #010101;	
 }
