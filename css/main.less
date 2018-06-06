@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 body{
-	background: gray;
+	// background: gray;
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -86,24 +86,27 @@ body{
 //section with icon and article
 .home-icon-container{
 	text-align: center;
-	width: 100%;
+	// overflow: hidden;
 }
 .home-icon{
-	width: 100%;
-
+	width: 50%;
 	transition: 1s;
-	display: block;
 	margin-top: 50px;
 	transition: 1s ease;
+	z-index: 2;
 }
 .home-icon:hover{
-	transform: rotate(40deg) scale(0.9);
+	transform: rotate(360deg) scale(1.2);
 	// width:  100%;
 }
 .home-title{
 	 color: #6bc498;
 	 font-size: 31.5px;
 	 font-weight: 300;
+	 letter-spacing: 4px;
+}
+.home-text-section{
+	margin-top: 20px;
 }
 .home-paragraph{
 	font-size: 13px;
@@ -128,5 +131,29 @@ body{
   font-weight: 300;
   line-height: 1.31;
   text-align: justify;
-  color: #010101;	
+    color: #010101;
+}
+
+// FIXED PHOTO
+.photoBG{
+	background: url(../img/IMG_0339.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 10%;
+}
+.photo-number{
+	text-align: center;
+ 	color: #6bc498;
+}
+.photo--title{
+	font-size: 66.5px;
+  font-weight: 800;
+  text-shadow: 1.2px 1.6px 0 #000000;
+  margin: 0;
+}
+.photo-title-small{
+	font-size: 15.5px;
+  font-weight: 800;
+  text-shadow: 1.2px 1.6px 0 #000000;
+  margin: 0 0 20px 0;
 }

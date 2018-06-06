@@ -38,7 +38,7 @@
         <div class="col nav-container">
           <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
           <nav class="navbar navbar-expand-lg navbar-light navbar-color-bg">
-            <a class="navbar-brand" href="#"><img class="navbar--logo" src="img/city.svg" alt="logo"></a>
+            <a class="navbar-brand" href="#"><img class="navbar--logo" src="img/CITY.svg" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -75,15 +75,89 @@
         <h1 class="home-title">LOREM IPSUM</h1>
         <p class="home-paragraph">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </p>
-        <p class="home-paragraph-learnMore">Read more</p>
-        <p class="home-paragraph-learnMore--toggle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        <p class="home-paragraph-learnMore" id="learnMore-1">Read more</p>
+        <p class="home-paragraph-learnMore--toggle" id="learnMore-toggle-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
         </p>
       </div>
+    </div>
+
+     <div class="row">
+      <div class="col-sm-3 home-icon-container">
+        <img class="home-icon" src="img/icon.svg" alt="#">
+      </div>
+      <div class="col-sm-9 home-text-section">
+        <h1 class="home-title">LOREM IPSUM</h1>
+        <p class="home-paragraph">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+        <p class="home-paragraph-learnMore" id="learnMore-2">Read more</p>
+        <p class="home-paragraph-learnMore--toggle" id="learnMore-toggle-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3 home-icon-container">
+        <img class="home-icon" src="img/icon.svg" alt="#">
+      </div>
+      <div class="col-sm-9 home-text-section">
+        <h1 class="home-title">LOREM IPSUM</h1>
+        <p class="home-paragraph">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+        <p class="home-paragraph-learnMore" id="learnMore-3">Read more</p>
+        <p class="home-paragraph-learnMore--toggle" id="learnMore-toggle-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+      </div>
+    </div> 
   </section>
+
+<section class="container-fluid photo-and-number_container">
+  <div class="row photoBG">
+    <div class="col">
+      <div class="photoBG--wrapper">
+        <div class="photo-number">
+          <h1 class="photo--title">2000</h1>
+          <h3 class="photo-title-small">LOREM IPSUM</h3>
+        </div>
+        <div class="photo-number">
+          <h1 class="photo--title">2000</h1>
+          <h3 class="photo-title-small">LOREM IPSUM</h3>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
 
 
 
 <script type="text/javascript">
+    $(document).ready(function(){
+    $("#learnMore-1").click(function(){
+        $("#learnMore-toggle-1").slideToggle("slow");
+        $('html, body').animate({
+        scrollTop: $("#learnMore-toggle-1").offset().top
+      }, 1000)
+    });
+});
+
+  $(document).ready(function(){
+    $("#learnMore-2").click(function(){
+        $("#learnMore-toggle-2").slideToggle("slow");
+        $('html, body').animate({
+        scrollTop: $("#learnMore-toggle-2").offset().top
+      }, 1000)
+    });
+});
+
+    $(document).ready(function(){
+    $("#learnMore-3").click(function(){
+        $("#learnMore-toggle-3").slideToggle("slow");
+        $('html, body').animate({
+        scrollTop: $("#learnMore-toggle-3").offset().top
+      }, 1000)
+    });
+});
+</script>
+<!-- <script type="text/javascript">
   $(document).ready(function(){
     $(".home-paragraph-learnMore").click(function(){
         $(".home-paragraph-learnMore--toggle").slideToggle("slow");
@@ -92,7 +166,7 @@
       }, 1000)
     });
 });
-</script>
+</script> -->
 
 </body>
 </html>
