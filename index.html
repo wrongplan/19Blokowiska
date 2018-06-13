@@ -21,12 +21,15 @@
 
     <!-- lightbox -->
 
-
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
 
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="js/jquery.countTo.js"></script>
+<script src="scrollreveal.js"></script>
 
 
     <title>Blokowiska Wrocławskie</title>
@@ -111,22 +114,119 @@
   </section>
 
 <section class="container-fluid photo-and-number_container">
-  <div class="row photoBG">
+  <div class="row photoBG .foo">
     <div class="col">
       <div class="photoBG--wrapper">
         <div class="photo-number">
-          <h1 class="photo--title">2000</h1>
+          <h1 class="photo--title count" data-from="0" data-to="6000" data-speed="2000"></h1>
           <h3 class="photo-title-small">LOREM IPSUM</h3>
         </div>
         <div class="photo-number">
           <h1 class="photo--title">2000</h1>
-          <h3 class="photo-title-small">LOREM IPSUM</h3>
+          <h3 class="photo-title-small ">LOREM IPSUM</h3>
         </div>
       </div>
     </div>
   </div> 
 </section>
 
+
+<section class="container newsletter">
+  <div class="row">
+    <div class="col">
+      <h1 class="newsletter--title">NEWSLETTER</h1>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-4">
+      <input class="newsletter-border" type="text" placeholder="Your name"/>
+    </div>
+
+     <div class="col-md-4">
+      <input class="newsletter-border" type="text" placeholder="Your name"/>
+    </div>
+    
+    <div class="col-md-4">
+      <input class="newsletter-border" type="text" placeholder="Your name"/>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="container-fluid footerBG">
+  <div class="row footer_maps">
+    <div class="col">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.769583756855!2d17.00368401575547!3d51.1127112795722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc206d04df1c5%3A0x69ca06ddb342b81e!2splac+Strzegomski%2C+Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1528826796572" width="100%" height="200px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="row contact_Icon text-center">
+      <div class="col-sm-4 mobile--container">
+        <a class="mobile_contact" href="https://www.google.com/maps?ll=51.112711,17.005873&z=15&t=m&hl=pl&gl=PL&mapclient=embed&q=plac+Strzegomski+Wroc%C5%82aw" target="_blank">
+          <i class="fas fa-home contact_Icon--fontawesome"></i>
+          <p>ul. Szwedzka X Wrocław</p>
+        </a>
+      </div>
+    <div class="col-md-4 mobile--container">
+      <a class="mobile_contact" href="tel:+48 000 000 000">
+        <i class="fas fa-phone-square contact_Icon--fontawesome"></i>
+          <p>+48 000 000 000</p>
+      </a>
+    </div>
+
+    <div class="col-md-4 mobile--container">
+      <a class="mobile_contact" href="mailto:youremailaddress">
+        <i class="far fa-envelope-open contact_Icon--fontawesome"></i>
+          <p>mail@mail.pl</p>
+      </a>
+    </div>
+
+  </div>
+
+  <nav class="row bottom_menu">
+    <div class="col">
+      <ul>
+        <li class="bottom_menu--list"><a href="#">HOME</a></li>
+        <li class="bottom_menu--list"><a href="#">HOME</a></li>
+        <li class="bottom_menu--list"><a href="#">HOME</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row author">
+    <div class="col">
+      <span>Code&Design Ukasz | 06.2018</span>
+    </div>
+
+</footer>
+
+  
+</footer>
+
+<!-- <div id="fooContainer">
+  <div class="foo"> Foo 1 </div>
+  <div class="foo"> Foo 2 </div>
+  <div class="foo"> Foo 3 </div>
+</div>
+
+<div id="barContainer">
+  <div class="bar"> Bar 1 </div>
+  <div class="bar"> Bar 2 </div>
+  <div class="bar"> Bar 3 </div>
+</div> -->
+
+
+<!-- odliczanie do wskazanej liczy -->
+<script>
+   $(document).ready(function(){
+ 
+      $('.count').countTo();
+ 
+   });
+</script>
 
 
 <script type="text/javascript">
@@ -167,6 +267,8 @@
     });
 });
 </script> -->
+
+
 
 </body>
 </html>
