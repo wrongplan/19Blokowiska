@@ -89,7 +89,7 @@ body{
 	// overflow: hidden;
 }
 .home-icon{
-	width: 40%;
+	width: 30%;
 	transition: 1s;
 	margin-top: 50px;
 	transition: 1s ease;
@@ -209,8 +209,18 @@ body{
 }
 .mobile--container:hover{
 	.contact_Icon--fontawesome{
-		font-size: 44px;
+		font-size: 35px;
 		transition: 0.5s;
+	}
+	 	p{
+ 		font-weight: bolder;
+ 		font-size: 13px;
+ 		transition: 0.5s;
+ 	}
+}
+.mobile--container:active{
+	.contact_Icon--fontawesome{
+		color: #0d593b;
 	}
 	 	p{
  		font-weight: bolder;
@@ -221,7 +231,7 @@ body{
 
 .contact_Icon--fontawesome{
 	color: white;
-	font-size: 36px;
+	font-size: 30px;
 	margin-top: 22px;
 	transition: 0.5s;
 }
@@ -248,6 +258,7 @@ body{
 	list-style: none;
 	width: 100%;
 	text-align: center;
+	width: 100%;
 	a{
 		text-decoration: none;
 		color: white;
@@ -273,3 +284,34 @@ body{
  	text-align: center;
  	font-size: 10px;
  }
+  @media (min-width: 576px) {
+  	.home-icon{
+	width: 100%;
+}
+.home-text-section{
+
+	margin-top: 50px;
+}
+.home-title{
+	 text-align: left;
+	 margin-bottom: 5px;
+}
+.home-icon{
+	  width: 133px;
+  height: 133px;
+	margin-top: 50px;
+}
+
+
+
+  }
+// Extra small (xs) devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// Small (sm) devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+// Medium (md) devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+// Large (lg) devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+// Extra (xl) large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
