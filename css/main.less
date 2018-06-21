@@ -80,6 +80,7 @@ body{
 	font-size: 50px;
 	 text-shadow: 2.4px 3.2px 4px #000000;
 	 line-height: 0.8;
+	 font-weight: 300;
 	 letter-spacing: 2px;	 
 }
 
@@ -105,6 +106,7 @@ body{
 	 font-weight: 300;
 	 letter-spacing: 4px;
 	 text-align: center;
+
 }
 .home-text-section{
 	margin-top: 20px;
@@ -285,9 +287,7 @@ body{
  	font-size: 10px;
  }
   @media (min-width: 576px) {
-  	.home-icon{
-	width: 100%;
-}
+
 .home-text-section{
 
 	margin-top: 50px;
@@ -302,9 +302,63 @@ body{
 	margin-top: 50px;
 }
 
+}//media
+
+@media (min-width: 768px) {
+//white belt i header	
+.row.header-title--container {
+	width: 50vw;
+}
+//section with scale and rotate elments
+.home-container--one-element{
+	margin-top: 67px;
+}
+.home-icon{
+	margin:0;
+	 	width: 160px;
+ 	height: 160px;
+}
+.home-text-section {
+	 margin-top: 0;
+}
+.photoBG{
+	margin-top: 150px;
+	 height: 234px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+//display number in fixed photos
+.photoBG--wrapper{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 96px 0 96px;
+}
+.newsletter{
+	margin-top: 64px;
+	margin-bottom: 90px;
+}
+.newsletter--title{
+	margin-bottom: 22px;
+}
+.col-md-4:nth-of-type(2) .newsletter-border{
+	margin: 0 0;
+}
+
+//botom menu
+.bottm_menu--container{
+	display: flex;
+
+}
+.author {
+
+    background: black;
+    padding: 0.4%;
+    }
+
+}
 
 
-  }
 // Extra small (xs) devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 // Small (sm) devices (landscape phones, 576px and up)
