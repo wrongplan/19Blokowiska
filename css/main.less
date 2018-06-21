@@ -286,6 +286,11 @@ body{
  	text-align: center;
  	font-size: 10px;
  }
+
+.newsletter_slide-photo{
+	display: none;
+}
+
   @media (min-width: 576px) {
 
 .home-text-section{
@@ -327,6 +332,7 @@ body{
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
+	 background-position: 50% 50%;
 }
 //display number in fixed photos
 .photoBG--wrapper{
@@ -344,6 +350,9 @@ body{
 .col-md-4:nth-of-type(2) .newsletter-border{
 	margin: 0 0;
 }
+.newsletter-border--container{
+	display: flex;
+}
 
 //botom menu
 .bottm_menu--container{
@@ -358,6 +367,27 @@ body{
 
 }
 
+@media (min-width: 992px) { 
+
+	.newsletter-border--container {
+    display: block;
+
+}
+.newsletter{
+	margin-bottom: -55px;
+}
+.newsletter_slide-container {
+	 z-index: -2;
+}
+.newsletter_slide-photo{
+		height: 411px;
+ 		display: block;
+	}
+
+.col-md-4:nth-of-type(2) .newsletter-border{
+	margin: 40px 0;
+}
+ }
 
 // Extra small (xs) devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
