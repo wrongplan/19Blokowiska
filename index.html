@@ -31,6 +31,17 @@
 <script src="js/jquery.countTo.js"></script>
 <script src="scrollreveal.js"></script>
 
+<script src="js/jquery.viewportchecker.min.js"></script>
+  <!-- animate css -->
+  <link rel="stylesheet" href="css/animate.css">
+                <script src="js/wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+
+
+
 
     <title>Blokowiska Wrocławskie</title>
 </head>
@@ -39,14 +50,38 @@
 
       <div class="row">
         <div class="col nav-container">
-          <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+    
           <nav class="navbar navbar-expand-lg navbar-light navbar-color-bg">
             <a class="navbar-brand" href="#"><img class="navbar--logo" src="img/CITY.svg" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+            </div>
+          </nav> 
+
+        </div>
+      </div>
+
+<!--        <div class="row">
+        <div class="col nav-container">
+    
+          <nav class="navbar navbar-expand-lg navbar-light navbar-color-bg">
+            <a class="navbar-brand" href="#"><img class="navbar--logo" src="img/CITY.svg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="#">Home</a>
@@ -56,9 +91,10 @@
                 </li>
               </ul>
             </div>
-          </nav>      
+          </nav> 
+
         </div>
-      </div>
+      </div> -->
 
     <div class="row header-title--container">
       <div class="col header-title--border">
@@ -118,7 +154,7 @@
     <div class="col">
       <div class="photoBG--wrapper">
         <div class="photo-number">
-          <h1 class="photo--title count" data-from="0" data-to="6000" data-speed="2000">6000</h1>
+          <h1 class="photo--title count wow bounceIn" data-wow-duration="2s" data-wow-delay="0.3s" data-from="0" data-to="6000" data-speed="2000">6000</h1>
           <h3 class="photo-title-small">LOREM IPSUM</h3>
         </div>
         <div class="photo-number" >
@@ -131,7 +167,7 @@
 </section>
 
 
-<section class="container newsletter">
+<section class="container newsletter dummy">
   <div class="row">
     <div class="col">
       <h1 class="newsletter--title">NEWSLETTER</h1>
@@ -155,7 +191,7 @@
     </div>
 
     <div class="col-lg-6 newsletter_slide-container">
-      <img class="newsletter_slide-photo" src="img/Blok.png" alt="#">
+      <img class="newsletter_slide-photo wow slideInRight" data-wow-duration="3s" data-wow-delay="0.5s" src="img/Blok.png" alt="#">
     </div>
 
   </div>
@@ -202,7 +238,7 @@
     </div>
   </nav>
 
-  <div class="row author">
+  <div class="row author  ">
     <div class="col">
       <span>Code&Design Ukasz | 06.2018</span>
     </div>
@@ -210,7 +246,7 @@
 </footer>
 
   
-</footer>
+
 
 <!-- <div id="fooContainer">
   <div class="foo"> Foo 1 </div>

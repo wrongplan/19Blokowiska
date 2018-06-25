@@ -44,8 +44,22 @@ body{
 }
 .nav-item {
 	text-align: center;
-	color: white;
+	// color: white;
     }
+ .nav-link{
+ 	padding: 15px;
+ 	transition: 0.5s;
+ 	&:hover{
+ 		font-weight: bolder;
+ 		transition: 0.5s;
+ 	}
+ 	&:focus{
+ 		background-color: #6bc498;
+ 		transition: 0.5s;
+
+ 	}
+ }
+
 
 .navbar--logo{
 	width: 117px;
@@ -369,12 +383,49 @@ body{
 
 @media (min-width: 992px) { 
 
-	.newsletter-border--container {
-    display: block;
+.navbar-nav	{
+	width: 15%;
+}
+.nav-item {
+    text-align: center;
+    width: 50%;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+ .nav-link{
+ 	padding: 10px;
+ 	transition: 1s;
+ 	color: gold;
+ 	text-align: center !important;
+ 	&:hover{
+ 		font-weight: bolder;
+ 		font-size: 18px;
+ 		
+ 		transition: 0.5s;
+ 		color: red;
+ 	}
+ 	&:focus{
+ 		background-color: inherit;
+ 		color: #6bc498 !important;
+ 		transition: 0.5s;
+ 	}
+ }
+.navbar-color-bg {
+    padding: 1.5vh 5vw;
+}
 
+//fixed photo section
+.photoBG--wrapper {
+    padding: 0px 180px 0 180px;
 }
 .newsletter{
 	margin-bottom: -55px;
+}
+.newsletter-border--container {
+    display: block;
+
 }
 .newsletter_slide-container {
 	 z-index: -2;
@@ -388,6 +439,7 @@ body{
 	margin: 40px 0;
 }
  }
+
 
 // Extra small (xs) devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
